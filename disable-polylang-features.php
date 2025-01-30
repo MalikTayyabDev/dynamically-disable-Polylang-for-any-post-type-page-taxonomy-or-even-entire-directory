@@ -1,3 +1,4 @@
+<?php
 // 1. Add Custom Settings to Disable Polylang on Selected Items
 add_action('admin_init', function () {
     register_setting('reading', 'disable_polylang_items', [
@@ -87,6 +88,8 @@ add_filter('pll_get_the_languages', function ($languages) {
     }
     return $languages;
 });
+
+?>
 
 <!-- How to Use It
 
